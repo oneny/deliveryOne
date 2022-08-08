@@ -34,7 +34,7 @@ const HomeScreen = () => {
           source={{
             uri: "https://links.papareact.com/wru",
           }}
-          className="h-7  w-7 bg-gray-300 p-4 rounded-full"
+          className="h-7 w-7 bg-gray-300 p-4 rounded-full"
         />
 
         <View className="flex-1">
@@ -57,11 +57,16 @@ const HomeScreen = () => {
             keyboardType="default"
           />
         </View>
+
         <AdjustmentsIcon color="#00CCBB" />
       </View>
 
       {/* Body */}
-      <ScrollView>
+      <ScrollView className="bg-gray-100"
+        contentContainerStyle={{
+          paddingBottom: 100,
+        }}
+      >
         {/* Categories */}
         <Categories />
 
@@ -76,10 +81,15 @@ const HomeScreen = () => {
         <FeaturedRow
           id="1234"
           title="Tasty Discounts"
-          description="  Everyone's been enjoying these juicy discounts!"
+          description="Everyone's been enjoying these juicy discounts!"
         />
 
         {/* Offers near you */}
+        <FeaturedRow
+          id="12345"
+          title="Offers near you!"
+          description="Why not support your local restaurant tonight!"
+        />
         <FeaturedRow
           id="12345"
           title="Offers near you!"
