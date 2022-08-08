@@ -1,9 +1,9 @@
-import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
-import { ArrowRightIcon } from 'react-native-heroicons/outline';
-import RestaurantCard from './RestaurantCard';
+import { View, Text, ScrollView } from "react-native";
+import React from "react";
+import { ArrowRightIcon } from "react-native-heroicons/outline";
+import RestaurantCard from "./RestaurantCard";
 
-const FeaturedRow = ({ title, description, featuredCategory  }) => {
+const FeaturedRow = ({ title, description, featuredCategory }) => {
   return (
     <View>
       <View className="mt-4 flex-row items-center justify-between px-4">
@@ -17,7 +17,7 @@ const FeaturedRow = ({ title, description, featuredCategory  }) => {
         horizontal
         contentContainerStyle={{
           paddingHorizontal: 15,
-        }} 
+        }}
         showsHorizontalScrollIndicator={false}
         className="pt-4"
       >
@@ -29,7 +29,7 @@ const FeaturedRow = ({ title, description, featuredCategory  }) => {
           rating={4.5}
           genre="Japanese"
           address="123 Main St"
-          short-description="This is a Test description"
+          short_description="Nando's is a South African multinational fast casual chain that specialises in flame-grilled peri-peri style chicken"
           dished={[]}
           long={20}
           lat={0}
@@ -41,7 +41,7 @@ const FeaturedRow = ({ title, description, featuredCategory  }) => {
           rating={4.5}
           genre="Japanese"
           address="123 Main St"
-          short-description="This is a Test description"
+          short_description="Nando's is a South African multinational fast casual chain that specialises in flame-grilled peri-peri style chicken"
           dished={[]}
           long={20}
           lat={0}
@@ -53,27 +53,14 @@ const FeaturedRow = ({ title, description, featuredCategory  }) => {
           rating={4.5}
           genre="Japanese"
           address="123 Main St"
-          short-description="This is a Test description"
+          short_description="Nando's is a South African multinational fast casual chain that specialises in flame-grilled peri-peri style chicken"
           dished={[]}
           long={20}
           lat={0}
         />
-        <RestaurantCard
-          id={123}
-          imgUrl="https://links.papareact.com/gn7"
-          title="Yo! Sushi"
-          rating={4.5}
-          genre="Japanese"
-          address="123 Main St"
-          short-description="This is a Test description"
-          dished={[]}
-          long={20}
-          lat={0}
-        />
-
       </ScrollView>
     </View>
-  )
-}
+  );
+};
 
 export default FeaturedRow;
